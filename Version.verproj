@@ -1,0 +1,13 @@
+<Project Sdk="SomeVer/0.1.2">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <SomeVerTagPrefix>v</SomeVerTagPrefix>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <VersionTemplate Include="templates/version.txt.template"
+                     OutputPath="generated/version.txt" />
+    <VersionTemplate Include="templates/config.xml.template"
+                     OutputPath="generated/config.xml" />
+  </ItemGroup>
+</Project>
